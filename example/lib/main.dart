@@ -308,41 +308,47 @@ class _MyAppState extends State<MyApp> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset('assets/images/logo.png', width: 480),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           Container(
             color: Colors.black,
-            child: Row(
+            child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   '747EE',
-                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 24),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 24),
                 ),
                 Text(
                   'Matt F.',
-                  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 24),
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontSize: 24),
                 ),
               ],
             ),
           ),
-          SizedBox(height: 8),
-          Text('Placed at July 30, 12:51 PM'),
-          Text('Due at July 30, 1:12 PM'),
-          SizedBox(height: 16),
+          const SizedBox(height: 8),
+          const Text('Placed at July 30, 12:51 PM'),
+          const Text('Due at July 30, 1:12 PM'),
+          const SizedBox(height: 16),
           Container(height: 1, color: Colors.black),
-          SizedBox(height: 8),
-          Center(
+          const SizedBox(height: 8),
+          const Center(
             child: Text(
               'DELIVERY',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Container(height: 1, color: Colors.black),
-          SizedBox(height: 16),
-          Text('Disposable items: No'),
-          SizedBox(height: 8),
-          Row(
+          const SizedBox(height: 16),
+          const Text('Disposable items: No'),
+          const SizedBox(height: 8),
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text('1x Kebab on Chips',
@@ -350,8 +356,8 @@ class _MyAppState extends State<MyApp> {
               Text('\$19.50'),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -366,8 +372,8 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -382,8 +388,8 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -398,8 +404,8 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -414,8 +420,8 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
+          const Padding(
+            padding: EdgeInsets.only(left: 16.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -430,26 +436,26 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Container(
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
               border: Border.all(color: Colors.black),
             ),
-            child: Text(
+            child: const Text(
               'Customer note: "Could I please have double the sauce thank you"',
               style: TextStyle(fontStyle: FontStyle.italic),
             ),
           ),
-          Divider(),
-          Row(
+          const Divider(),
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text('Subtotal'),
               Text('NZD 25.00'),
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text('Amount paid'),
@@ -466,7 +472,7 @@ class _MyAppState extends State<MyApp> {
         child: Container(
           width: 270,
           color: Colors.white,
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: buildContent(),
         ),
       );
